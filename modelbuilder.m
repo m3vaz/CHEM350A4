@@ -1,10 +1,8 @@
 function [ modelhandle ]  ...
         = modelbuilder(identifiers, arrow, rxns, forward, backward)
 %MODELBUILDER Build models to be used by ode solvers
-%   Requires identifer list, arrow identifier, and a list of reactions, and
-%   a check value (to demonstrate that values are not being crossed between
-%   defintions. 
-%   Returns a model for use and a check value
+%   Requires identifer list, arrow identifier, and a list of reactions
+%   Returns a model for use
     
     if (iscellstr(rxns))
         rxns = {rxns};
